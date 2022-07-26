@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    var body: some View { 
         VStack(spacing: 40) {
             VStack(spacing: 20) {
                 Text("Welcome on Fast Maps")
                     .font(.title)
-//                    .font
+                    .fontWeight(.heavy)
+                    .foregroundColor(.white)
+                Text("Start the trip")
+                    .foregroundColor(.white)
             }
+            
+            StartButton(text:  "Go in!")
+            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
-        .background(Color.green)
+        .background(Color.green).opacity(0.7)
+        
     }
 }
   
